@@ -138,7 +138,6 @@ TEXT
       all_supplies_in_holidays(holiday_supplies)
     end
 
-  end
 
 #   # Question 7
 #   # Write a method to collect all holidays with BBQ
