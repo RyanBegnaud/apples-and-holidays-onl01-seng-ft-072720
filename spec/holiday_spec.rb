@@ -147,4 +147,5 @@ TEXT
       expect(all_holidays_with_bbq(holiday_supplies)).to eq([:fourth_of_july, :memorial_day])
     end
   end
+end
 
