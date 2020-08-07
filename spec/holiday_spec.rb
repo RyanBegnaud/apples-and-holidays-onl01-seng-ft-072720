@@ -58,36 +58,36 @@ describe "holiday_supplies_hash" do
 
   # Question 4
   # Write a method that adds a new holiday and its associated supplies to any season
-  describe "#add_new_holiday_with_supplies" do
-    it "modifies the original hash by adding supplies of a new holiday to a season" do
-      expect(holiday_supplies[:fall].keys).not_to include(:columbus_day)
+  # describe "#add_new_holiday_with_supplies" do
+  #   it "modifies the original hash by adding supplies of a new holiday to a season" do
+  #     expect(holiday_supplies[:fall].keys).not_to include(:columbus_day)
 
-      columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
+  #     columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
 
-      add_new_holiday_with_supplies(holiday_supplies, :fall, :columbus_day, columbus_day_supplies)
+  #     add_new_holiday_with_supplies(holiday_supplies, :fall, :columbus_day, columbus_day_supplies)
 
-      expect(holiday_supplies[:fall].keys).to include(:columbus_day)
-      expect(holiday_supplies[:fall][:columbus_day]).to match_array(columbus_day_supplies)
+  #     expect(holiday_supplies[:fall].keys).to include(:columbus_day)
+  #     expect(holiday_supplies[:fall][:columbus_day]).to match_array(columbus_day_supplies)
 
-      expect(holiday_supplies[:winter].keys).not_to include(:valentines_day)
+  #     expect(holiday_supplies[:winter].keys).not_to include(:valentines_day)
 
-      valentines_day_supplies = ["Cupid Cut-Out", "Candy Hearts"]
-      add_new_holiday_with_supplies(holiday_supplies, :winter, :valentines_day, valentines_day_supplies)
+  #     valentines_day_supplies = ["Cupid Cut-Out", "Candy Hearts"]
+  #     add_new_holiday_with_supplies(holiday_supplies, :winter, :valentines_day, valentines_day_supplies)
 
-      expect(holiday_supplies[:winter].keys).to include(:valentines_day)
-      expect(holiday_supplies[:winter][:valentines_day]).to match_array(valentines_day_supplies)
-    end
-  end
+  #     expect(holiday_supplies[:winter].keys).to include(:valentines_day)
+  #     expect(holiday_supplies[:winter][:valentines_day]).to match_array(valentines_day_supplies)
+  #   end
+  # end
 
-  # Question 5
-  # Write a method to collect all Winter supplies from all the winter holidays
-  describe "#all_winter_holiday_supplies" do
-    it "has all the winter supplies" do
-      ["Lights", "Wreath", "Party Hats"].each do |supply|
-        expect(all_winter_holiday_supplies(holiday_supplies)).to include(supply)
-      end
-    end
-  end
+  # # Question 5
+  # # Write a method to collect all Winter supplies from all the winter holidays
+  # describe "#all_winter_holiday_supplies" do
+  #   it "has all the winter supplies" do
+  #     ["Lights", "Wreath", "Party Hats"].each do |supply|
+  #       expect(all_winter_holiday_supplies(holiday_supplies)).to include(supply)
+  #     end
+  #   end
+  # end
 
   # Question 6
   # Write a method that uses a loop to list out all the supplies you have for each holiday and the season
